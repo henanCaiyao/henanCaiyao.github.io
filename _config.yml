@@ -1,21 +1,15 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-
-# Build settings
+title: "Altcoin Trading"
+subtitle: "The forex of cryptocurrencies."
+description: ""
+baseurl: ""
+url: "https://www.altcointrading.net"
+#url: "http://127.0.0.1:4000"
+author: "AltcoinTrading"
 markdown: kramdown
+## Default image size: 700x360
+ads:
+  ledger: '<div class="text-center"><a rel="nofollow" target="_blank" href="https://www.ledgerwallet.com/r/e274"><img alt="Ledger Wallet protects your bitcoins" src="https://www.ledgerwallet.com/images/promo/ledger-468x90-01.jpg"></a></div>'
+  trezor: '<div class="shifted-left"><a rel="nofollow" target="_blank" href="https://buytrezor.com?a=fany@tutanota.com"><img src="/img/wallets/trezor.jpg" alt="Trezor Wallet for bitcoins and altcoins" title="Trezor Wallet for bitcoins and altcoins"></a></div>'
+  pm1: '<div class="text-center"><a rel="nofollow" target="_blank" href="https://perfectmoney.is/?ref=7622697"><img alt="Perfect Money" src="/img/ads/pm1.jpg"></a></div>'
+  pm2: '<div class="shifted-left"><a rel="nofollow" target="_blank" href="https://perfectmoney.is/?ref=7622697"><img alt="Perfect Money" src="/img/ads/pm2.jpg"></a></div>'
