@@ -1,2 +1,2 @@
-# trading
-jekyll theme in newspaper style
+this is my blog site 
+
