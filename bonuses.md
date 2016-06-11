@@ -17,4 +17,3 @@ _________________
 
 ### Free credit for cloud hosting 
 
-{% aff DigitalOcean https://m.do.co/c/5ae2def361e8 %} giveth you 10 USD and {% aff Vultr https://www.vultr.com/freetrial/?ref=6873921 %} 50 USD in free credit.

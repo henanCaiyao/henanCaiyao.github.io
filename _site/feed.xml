@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Altcoin Trading</title>
+    <title>caiyao blog</title>
     <description></description>
     <link>http://127.0.0.1:4000/</link>
     <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Jun 2016 16:15:10 +0800</pubDate>
-    <lastBuildDate>Sat, 11 Jun 2016 16:15:10 +0800</lastBuildDate>
+    <pubDate>Sat, 11 Jun 2016 23:06:44 +0800</pubDate>
+    <lastBuildDate>Sat, 11 Jun 2016 23:06:44 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Value of Altcoins: Money and Tokens</title>
-        <description>&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;/img/charts/ethdash.jpg&quot;&gt;&lt;figure class=&quot;border&quot;&gt;&lt;amp-img itemprop=&quot;image&quot; src=&quot;/img/charts/ethdash.jpg&quot; alt=&quot;&quot; layout=&quot;responsive&quot; width=&quot;700px&quot; height=&quot;360px&quot;&gt;&lt;/amp-img&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Image: ETH-Dash chart (data from ShapeShift instant exchange, chart altcoinwisdom.com)&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;em&gt;Image: ETH-Dash chart (data from ShapeShift instant exchange, chart altcoinwisdom.com)&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 

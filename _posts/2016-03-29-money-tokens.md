@@ -12,7 +12,6 @@ update: 2016-03-29
 ---
 
 
-{% amp700 border {{page.image[0]}} {{page.image_alt[0]}} %}
 
 _Image: {{page.image_alt[0]}}_
 
