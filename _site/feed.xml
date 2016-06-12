@@ -1,114 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>caiyao blog</title>
+    <title>Sciblog</title>
     <description></description>
-    <link>http://127.0.0.1:4000/</link>
-    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Jun 2016 23:06:44 +0800</pubDate>
-    <lastBuildDate>Sat, 11 Jun 2016 23:06:44 +0800</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 12 Jun 2016 22:53:04 +0800</pubDate>
+    <lastBuildDate>Sun, 12 Jun 2016 22:53:04 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>Value of Altcoins: Money and Tokens</title>
-        <description>&lt;p&gt;&lt;em&gt;Image: ETH-Dash chart (data from ShapeShift instant exchange, chart altcoinwisdom.com)&lt;/em&gt;&lt;/p&gt;
+        <title>Eleventh post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
 
-&lt;p&gt;What is it all about altcoins in 2016? It looks like a big thing starting out. Sure, markets are volatile and risky but in spite of that interesting things are on the horizon.&lt;/p&gt;
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
 
-&lt;p&gt;So, to the altcoin value, apart from the fact that every altcoin is &lt;em&gt;new paradigm, totally&lt;/em&gt; and &lt;em&gt;absolutely something new&lt;/em&gt;, there are two, well - actually three categories of altcoins out there.&lt;/p&gt;
-
-&lt;p&gt;###Types of altcoins&lt;/p&gt;
-
-&lt;p&gt;####Altcoins as money&lt;/p&gt;
-
-&lt;p&gt;Some altcoins were developed as means of payment. You can usually tell from the coin’s name - like &lt;em&gt;Monero&lt;/em&gt; or &lt;em&gt;Digital Cash (DASH)&lt;/em&gt;. Litecoin was also developed primarily for payments.&lt;/p&gt;
-
-&lt;p&gt;These altcoins usually solve one of the drawbacks of Bitcoin: the fact that Bitcoin is not anonymous, that scalability is not built in by default (see the current block size debate) or that there is still some sort of centralized governance needed.&lt;/p&gt;
-
-&lt;p&gt;Trading money-altcoins is much like trading forex. It’s money, it’s a storage of value, a hedge - it is (if all is right) held and used by some people.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Interesting altcoins:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Monero&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Scalable and mined in a decentralized fashion Monero also takes privacy into account: Payments are unlinkable, untraceable and anonymous. At the moment there is a Monero-based market on Poloniex along with the BTC-based one.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DASH&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Dash is short for digital cash. The pivotal property of DASH is anonymous blockchain. No more block explorers. Another advantage is no governance and no way to link transactions together. DASH is currently traded heavily on Poloniex and Bittrex.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Litecoin&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Up until recently LTC was the second most popular altcoin. It was created to handle massive transaction volumes but, uh, whatever happened to it, nobody seems interested anymore.&lt;/p&gt;
-
-&lt;p&gt;Similar properties regarding volumes also has Nextcoin.&lt;/p&gt;
-
-&lt;p&gt;####Altcoins as tokens&lt;/p&gt;
-
-&lt;p&gt;Some altcoins were developed with blockchain technology in mind. Anyone who wants to participate in whatever lives on whichever blockchain needs to have the appropriate token. That can be &lt;em&gt;Ether&lt;/em&gt; or &lt;em&gt;MaidSafeCoin&lt;/em&gt;, for instance.&lt;/p&gt;
-
-&lt;p&gt;That is why Vitalik Buterin doesn’t endorse Ether as a value storage. It is not supposed to be money, it is supposed to be used to fuel certain type of apps. That is supposed to be it.&lt;/p&gt;
-
-&lt;p&gt;Why are these tokens speculated so much then? The answer is &lt;a href=&quot;https://en.wikipedia.org/wiki/Blue_Ocean_Strategy#Concept&quot;&gt;Blue ocean Strategy&lt;/a&gt;. Traders argue that Ether and other tokens are downplaying the monetary value of the coin on purpose: To show that it is &lt;em&gt;not&lt;/em&gt; just another “better money”. Tokens are a new category - something for which the demand is yet to be created. The value is expected to surge with the new demand. The demand will be by nature of the process focused on the token with no competition.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Interesting altcoins:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;MaidSafeCoin&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;MaidSafeCoin is a token for SAFE network. SAFE means Secure access for everyone, it is a distributed data management. All data is encrypted and cryptosigned by client. Computers storing data of SAFE network are mining credits ( ~ safecoins ) which are exchanged for goods and services.&lt;/p&gt;
-
-&lt;p&gt;Learn more about the SAFE network &lt;a href=&quot;http://maidsafe.net/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ether&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ether was heavily pumped, before which fanboys kept spamming bitcoin traders on Reddit claiming ETH is the new bitcoin. Now the interest is cooling down, there are no real massively popular Ethereum apps (Đapps) that would make the interest in Ether more than a pump/dump scheme for now.&lt;/p&gt;
-
-&lt;p&gt;There in infinite amount of Ether to be mined but the inflation is only 1% a year. If the value of the coin gets stable it makes ETH a better value storage than traditional money.&lt;/p&gt;
-
-&lt;p&gt;Ethereum is the platform on which Ether is the token. It is a platform on which Đapps (decentralized apps) are supposed to live. These can be used to store data or smart contracts.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ripple&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ripple is focused on smart contracts too. As a currency, its value is that of a bridge currency: All transaction across currencies can be instantaneous if every currency is liquid to Ripple and if exchange transactions are done through Ripple.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;BitShares&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;BitShares are one of the most interesting ideas in the altcoin space (click &lt;a href=&quot;https://bitsharestalk.org/index.php?topic=7628.0&quot;&gt;here&lt;/a&gt; for ELI5). The concept of BTS are shares in Decentralized Autonomous Companies (DACs). Anyone can become a “shareholder” of the first DAC by buying BitShares. The company’s work is then focused on revenue generation in form of bitUSD or whatever the company decides to call their profit unit. That is: the profit is generated in form of a “currency” pegged to USD. BTS (BitShares) can be thought of as a regular stock on a stock market&lt;/p&gt;
-
-&lt;p&gt;####Shitcoins&lt;/p&gt;
-
-&lt;p&gt;Last category are shitcoins. Coins that were created as an ego-blast of someone who could afford to pay the programmer and have no value proposition. If you check their websites you will see generic terms and buzzwords regarding issues that were already solved by many altcoins before, like&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Vcash was engineered to be innovative and forward-thinking. It prevents eavesdropping and censorship, promotes decentralized, energy efficient and instant network transactions.&lt;/em&gt; &lt;a href=&quot;http://www.vanillacoin.net/&quot;&gt;source&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Their value is purely speculative. They might pump and you might be coming early enough to cash in but that’s it.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Up&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 29 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://127.0.0.1:4000/value/</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000/value/</guid>
+        <pubDate>Thu, 11 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/technology/2016/02/11/eleventh.html</link>
+        <guid isPermaLink="true">/technology/2016/02/11/eleventh.html</guid>
+        
+        <category>css</category>
+        
+        <category>html</category>
         
         
-        <category>trading</category>
+        <category>technology</category>
+        
+      </item>
+    
+      <item>
+        <title>Tenth post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
+
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/technology/2016/02/09/tenth.html</link>
+        <guid isPermaLink="true">/technology/2016/02/09/tenth.html</guid>
+        
+        <category>css</category>
+        
+        <category>html</category>
+        
+        
+        <category>technology</category>
+        
+      </item>
+    
+      <item>
+        <title>nineth post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
+
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/technology/2016/02/09/nineth.html</link>
+        <guid isPermaLink="true">/technology/2016/02/09/nineth.html</guid>
+        
+        <category>journey</category>
+        
+        <category>jekyll</category>
+        
+        
+        <category>technology</category>
+        
+      </item>
+    
+      <item>
+        <title>Eight post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
+
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 08 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/eight-post</link>
+        <guid isPermaLink="true">/eight-post</guid>
+        
+        <category>html</category>
+        
+        <category>css</category>
+        
+        
+        <category>Random Topic</category>
+        
+      </item>
+    
+      <item>
+        <title>Seventh post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
+
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 07 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/technology/2016/02/07/seventh.html</link>
+        <guid isPermaLink="true">/technology/2016/02/07/seventh.html</guid>
+        
+        <category>octopress</category>
+        
+        <category>jekyll</category>
+        
+        
+        <category>technology</category>
+        
+      </item>
+    
+      <item>
+        <title>Sixth post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
+
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 06 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/education/writing/2016/02/06/sixth-post.html</link>
+        <guid isPermaLink="true">/education/writing/2016/02/06/sixth-post.html</guid>
+        
+        
+        <category>education</category>
+        
+        <category>writing</category>
+        
+      </item>
+    
+      <item>
+        <title>Fifth post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
+
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 05 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/technology/2016/02/05/fifth.html</link>
+        <guid isPermaLink="true">/technology/2016/02/05/fifth.html</guid>
+        
+        <category>holiday</category>
+        
+        <category>jekyll</category>
+        
+        
+        <category>technology</category>
+        
+      </item>
+    
+      <item>
+        <title>Fourth post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
+
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/jekyll/technology/2016/02/04/fourth-post.html</link>
+        <guid isPermaLink="true">/jekyll/technology/2016/02/04/fourth-post.html</guid>
+        
+        <category>css</category>
+        
+        
+        <category>jekyll</category>
+        
+        <category>technology</category>
+        
+      </item>
+    
+      <item>
+        <title>Third post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
+
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/science/2016/02/03/third-post.html</link>
+        <guid isPermaLink="true">/science/2016/02/03/third-post.html</guid>
+        
+        
+        <category>science</category>
+        
+      </item>
+    
+      <item>
+        <title>second post</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://placehold.it/250x150&quot; alt=&quot;picture&quot; /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices porta ultrices. Nulla gravida commodo aliquet. Quisque tincidunt enim quis odio vestibulum, et luctus ipsum lacinia. Cras malesuada sit amet erat vitae porttitor. Duis vitae mollis eros. Vestibulum eget tortor sodales, ullamcorper odio ac, tincidunt felis. Nunc interdum, mauris vitae ornare bibendum, risus libero aliquam ex, cursus feugiat mi libero in nulla. Nullam vel pulvinar ante. Vivamus vitae est aliquet, porttitor eros ut, facilisis erat. Sed malesuada nibh odio, at egestas libero commodo vitae. Integer laoreet lorem ac iaculis fermentum.
+Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. &lt;!-- more --&gt;
+Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.&lt;/p&gt;
+
+&lt;p&gt;Praesent sodales viverra purus non semper. Maecenas eu convallis neque. Integer velit nunc, facilisis vel nisi in, semper pretium lorem. Sed orci est, pellentesque sit amet volutpat a, tristique in leo. Ut at euismod dolor, non laoreet mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum metus lorem, dapibus ut purus ac, bibendum vulputate metus. Sed a lorem enim. Ut in pharetra dui.&lt;/p&gt;
+
+&lt;p&gt;Etiam ultrices orci a risus fringilla, eu molestie elit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam sed metus nulla. Nam vel aliquet enim. Pellentesque elementum, libero at vulputate cursus, velit turpis tempor neque, quis pellentesque turpis mi non est. Fusce tristique imperdiet fringilla. Integer tristique nibh imperdiet lacus volutpat, vitae tempor nulla efficitur. Nam ipsum ipsum, semper ut tellus eget, venenatis imperdiet augue. Nulla facilisi. Aenean non nisl eget justo efficitur bibendum. Quisque vel risus est. Cras id quam velit.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque quis hendrerit leo. Pellentesque tristique sem vitae pretium posuere. Vivamus euismod eu tellus nec porttitor. Sed vel est sem. Nullam pellentesque arcu in justo molestie maximus. Integer augue nibh, ultrices eget aliquam eget, rhoncus at est. Phasellus molestie, ante ut tempor dignissim, nisl nisl congue enim, id hendrerit dolor lorem ut ante.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Feb 2016 00:00:00 +0800</pubDate>
+        <link>/technology/computer/news/2016/02/02/second-post.html</link>
+        <guid isPermaLink="true">/technology/computer/news/2016/02/02/second-post.html</guid>
+        
+        <category>holiday</category>
+        
+        
+        <category>technology</category>
+        
+        <category>computer</category>
+        
+        <category>news</category>
         
       </item>
     
