@@ -68,7 +68,7 @@ a:focus, a:hover {
 .heading {
     margin-right: 0px;
 }
-.btn-default.sciblog {
+.btn-default.caiyaoblog {
     background: transparent;
     height: 35px;
     width: 75px;
@@ -76,7 +76,7 @@ a:focus, a:hover {
     color: #fff;
     border: 1px solid #fff;
 }
-.btn-default.sciblog:hover {
+.btn-default.caiyaoblog:hover {
     color: #0089FF;
     background-color: #fff;
     border-color: #adadad;
@@ -90,7 +90,7 @@ img {
 .title-image {
     width: 50px;
 }
-.sciblog {
+.caiyaoblog {
 
 }
 .pagination ul > li > a:hover {
