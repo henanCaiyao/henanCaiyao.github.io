@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "第一篇博客"
+date:   2016-06-21
+categories: writing
+permalink: 
+tags: 感悟
+
+# author
+author: 蔡耀
+---
+
+![Hello](http://7xrn7f.com1.z0.glb.clouddn.com/16-6-21/58686748.jpg)   <br/>
+今天博客算是可以开始写东西了，剩下的才是最关键的：学习-->记录-->成长。上海携程，我来了~
+<img src = "http://www.goidea.com.cn/artbk/uploadfile/2013/0607/20130607094957672.png" height = "50px" width = "50px" />
