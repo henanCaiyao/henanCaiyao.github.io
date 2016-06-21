@@ -14,15 +14,17 @@
 								<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 							</h2>
 							<div class="author" style="margin-top: -10px;">Posted by
-								<i class="fa fa-user"></i><a href="http://www.airrayagroup.com/"> {{ post.author}}</a>
+								<i class="fa fa-user"></i><a href="#"> {{ post.author}}</a>
 								<span class="post-meta"><i class="fa fa-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}</span>
 							</div>
-							<div class="excerpt">{{ post.excerpt }}</div>
-							<div class="readmore" style="float: left;">
-								{% if post.content | post_contains_excerpt_tag %}
-									<a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
-								{% endif %}
-							</div>								
+							<div class = "onepost">
+								<div class="excerpt">{{ post.excerpt }}</div>
+								<div class="readmore" style="float: left;">
+									{% if post.content | post_contains_excerpt_tag %}
+										<a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+									{% endif %}
+								</div>								
+							</div>
 					</div>
 					<hr>
 						<div class="post-list" style="list-style-type: none;">			
