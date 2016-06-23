@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 縩訞
+title: 䌨訞
 tagline: 努力就能成功！
 ---
 {% include JB/setup %}
