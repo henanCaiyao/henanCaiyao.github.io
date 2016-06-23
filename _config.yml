@@ -10,14 +10,15 @@ safe: false
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 寂寞先生
+title : 奔跑不止的蜗牛
 tagline: Site Tagline
 author :
-  name : 陈佳伟
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : 䌨訞
+  email : henan_caiyao@163.com
+  github : henanCaiyao
+  cnblog : http://www.cnblogs.com/caiyao/
+  twitter : 
+  feedburner : 
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -27,7 +28,8 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : caiyaoblog.me
+production_url : http://caiyaoblog.me
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -52,10 +54,10 @@ JB :
   #
   # CAUTION:
   #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
-  #   - Only the following values are falsy: ["", null, false]
+  #   - Only the following values are false: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : 
+  # BASE_PATH : /blog
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
