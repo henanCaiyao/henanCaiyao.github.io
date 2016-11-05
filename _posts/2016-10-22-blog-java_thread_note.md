@@ -413,6 +413,12 @@ http://www.cnblogs.com/liuling/archive/2013/08/21/2013-8-21-03.html
 
 在CAS里面有个潜在的ABA问题，这个问题可能会在CAS时出现一些意想不到的问题，这里有对ABA问题比较好的解释： [用AtomicStampedReference解决ABA问题](http://blog.hesey.net/2011/09/resolve-aba-by-atomicstampedreference.html)  
 
+
+资料：   
+[1] [Java 理论与实践: 非阻塞算法简介](http://www.ibm.com/developerworks/cn/java/j-jtp04186/)  
+  
+    
+
 **坚持就会胜利，努力就能成功！**  
-										update : 2016年11月5日
+　　　　　　　　　　　　　　　　　　　　　　　update : 2016年11月5日
 　　　　　　　　　　　　　　　　　　　　　　
