@@ -194,8 +194,225 @@ http://www.cnblogs.com/liuling/archive/2013/08/21/2013-8-21-03.html
 *问题： 对volatile变量修饰的域进行的读取和写入是直接针对内存吗？还是通过其他算法保证读取和写入与内存保持一致？*
 
 ### 原子类
-。。。。
+当多个线程试图同时访问同一个同一个变量（实例变量、静态变量、数组变量）而且至少有一个线程试图修改该变量的值时，可以考虑使用concurrent.atomic包下的原子类，以避免由于线程执行顺序不确定导致的共享变量值与预期不相符。这些原子类的底层实现不是通过锁的机制，而是通过CAS（compare and set）的无锁机制，当对变量进行修改的时候会再次判断该变量是否已被别的线程修改，如果已经被修改，则该次访问失败，如果没有被修改则该次访问成功。atomic包下提供了四组原子类：  
+##### AtomicBoolean，AtomicInteger，AtomicLong，AtomicReference  
+
+	// 提供对boolean/int/long/对象的原子访问，以下代码为使用AtomicReference实现的无阻塞栈  
+	import java.util.concurrent.atomic.AtomicReference;
+
+	public class LinkedStack<T> {
+	
+	private AtomicReference<Node<T>> stack = new AtomicReference<>() ;
+	
+	public T push(T newValue){
+		
+		for(;;){ // 直到CAS成功才返回
+			Node<T> oldValue = stack.get() ;
+			
+			Node<T> newNode = new Node<T>(newValue,oldValue) ;
+			
+			if(stack.compareAndSet(oldValue, newNode)){ // 判断oldValue是否被修改
+				return newValue ;
+			}
+			
+		}
+		
+	}
+	public T pop(){
+		
+		for(;;){
+			Node<T> oldNode = stack.get() ;
+			
+			Node<T> newNode = oldNode.getNext() ;
+			
+			if(stack.compareAndSet(oldNode, newNode)){
+				return oldNode.getValue() ;
+			}
+		}
+		
+	}
+	private static final class Node<T>{
+		
+		private T value ;
+		private Node<T> next ;
+		
+		public Node(T value , Node<T> next){
+			this.value = value ;
+			this.next = next ;
+		}
+		
+		public T getValue() {
+			return value;
+		}
+		public void setValue(T value) {
+			this.value = value;
+		}
+		public Node<T> getNext() {
+			return next;
+		}
+		public void setNext(Node<T> next) {
+			this.next = next;
+		}
+		
+	}
+	}	
+##### AtomicIntegerArray，AtomicLongArray,AtomicReferenceArray  
+	提供int/long/对象数组的原子访问
+##### AtomicLongFieldUpdater，AtomicIntegerFieldUpdater，AtomicReferenceFieldUpdater  
+	// 提供对域变量的原子访问，该原子类对域变量有一些限制：   
+	// 1. 字段必须是volatile类型的
+	// 2. 调用者必须能直接操作域变量(例如： 修饰为default，则同一包下的访问是允许的)
+	// 3. 只能是实例变量
+	// 4. 不能是final修饰的  
+	public class FieldUpdaterTest {
+	/**
+	 * 一百个线程同时修改一个域变量的值，只允许一个执行修改操作
+	 */
+	public volatile int a = 0 ;
+	
+	public static FieldUpdaterTest test = new FieldUpdaterTest() ;
+	
+	public static AtomicIntegerFieldUpdater<FieldUpdaterTest> updater = 
+			AtomicIntegerFieldUpdater.newUpdater(FieldUpdaterTest.class, "a") ;
+	
+	public static void main(String[] args) {
+		
+		ExecutorService pool = Executors.newFixedThreadPool(100) ;
+		
+		for(int i = 0 ; i < 100 ; i ++ ){
+			pool.execute(new Runnable(){
+				@Override
+				public void run() {
+					System.out.println("execute") ;
+					if(updater.compareAndSet(test, 0 , 101)){
+						System.out.println("modified !") ;
+					}
+				}
+			});
+		}
+		pool.shutdown() ; 
+	}
+	}
+
+##### AtomicMarkableReference，AtomicStampedReference  
+	//这两个原子类不仅提供了对对象的原子访问，还附加了一些其他的信息。 AtomicMarkableReference提供了<Reference,Boolean>类型的原子访问； AtomicStampedReference提供了<Reference,Integer>的原子访问。以下为测试代码：  
+	   
+	import java.util.concurrent.atomic.AtomicMarkableReference;
+
+	public class AtomicMarkableReferenceExample {
+
+	private static Person person;
+
+	private static AtomicMarkableReference<Person> aMRperson;
+
+	public static void main(String[] args) throws InterruptedException {
+
+		Thread t1 = new Thread(new MyRun1());
+
+		Thread t2 = new Thread(new MyRun2());
+
+		person = new Person(15);
+
+		aMRperson = new AtomicMarkableReference<Person>(person, false);
+
+		System.out.println("Person is " + aMRperson.getReference() + "\nMark: "
+
+				+ aMRperson.isMarked());
+
+		t1.start();
+
+		t2.start();
+
+		t1.join();
+
+		t2.join();
+
+	}
+
+	static class MyRun1 implements Runnable {
+
+		public void run() {
+			
+			for (int i = 0; i <= 5; i++) {
+
+				aMRperson.getReference().setAge(person.getAge() + 1);
+				System.out.println(Thread.currentThread().getName() + "after setAge : " + aMRperson.getReference().getAge() );
+
+				boolean isSuccess = aMRperson.compareAndSet(new Person(18), new Person(18), false, true);
+				System.out.println(Thread.currentThread().getName() + "compareAndSet: " + isSuccess) ;
+
+				aMRperson.set(aMRperson.getReference(), true);
+				
+				System.out.println(Thread.currentThread().getName() + 
+						String.format(
+								"set reference  %s : %s ", 
+								aMRperson.getReference(),
+								String.valueOf(aMRperson.isMarked()))) ; ;
+			}
+
+		}
+
+	}
+
+	static class MyRun2 implements Runnable {
+
+		public void run() {
+
+			for (int i = 0; i <= 5; i++) {
+
+				aMRperson.getReference().setAge(person.getAge() - 1);
+				System.out.println(
+						Thread.currentThread().getName() 
+						+ " after setAge : " 
+						+ aMRperson.getReference().getAge());
+				
+				boolean isSuccess = aMRperson.attemptMark(new Person(40), true);
+				System.out.println(
+						Thread.currentThread().getName() 
+						+ " attemptMark : " + String.valueOf(isSuccess)) ;
+			}
+
+		}
+
+	}
+
+	static class Person {
+
+		private int age;
+
+		public Person(int age) {
+
+			this.age = age;
+
+		}
+
+		public int getAge() {
+
+			return age;
+
+		}
+
+		public void setAge(int age) {
+
+			this.age = age;
+
+		}
+
+		@Override
+
+		public String toString() {
+
+			return "Person age is " + this.age;
+
+		}
+
+	}
+
+	}
+
+
+在CAS里面有个潜在的ABA问题，这个问题可能会在CAS时出现一些意想不到的问题，这里有对ABA问题比较好的解释： [用AtomicStampedReference解决ABA问题](http://blog.hesey.net/2011/09/resolve-aba-by-atomicstampedreference.html)  
 
 **坚持就会胜利，努力就能成功！**  
-
-　　　　　　　　　　　　　　　　　　　　　　7/3/2016 9:39:04 PM
+										update : 2016年11月5日
+　　　　　　　　　　　　　　　　　　　　　　
