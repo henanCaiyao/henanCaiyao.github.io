@@ -419,7 +419,89 @@ http://www.cnblogs.com/liuling/archive/2013/08/21/2013-8-21-03.html
 [1] [Java 理论与实践: 非阻塞算法简介](http://www.ibm.com/developerworks/cn/java/j-jtp04186/)  
   
     
+## ThreadLocal
+ThreadLocal可以实现保存每个线程自己使用的对象。ThreadLocal变量对于各个线程完全独立互不影响。 Thread类(代表一个独立线程)有一个名叫threadLocals（ThreadLocal.ThreadLocalMap）的域变量，每次通过ThreadLocal.set()方法存储数据，都会将当前ThreadLocal类作为key，set进去的obj作为value，put到currentThread()的threadLocals Map上。 这样就实现了ThreadLocal变量在每一个线程（Thread）上都是独立的。   
 
+## 进入阻塞状态的几种情况  
+1. sleep（millisencods）方法调用，任务在指定时间内不会运行。
+2. 通过调用wait使线程挂起，直到线程得到notify或notifyAll消息。线程才会进入就绪状态。
+3. 等待输入/输出
+4. 任务试图在某个对象上调用其同步控制方法。但是对象锁不可用，因为另一个任务已经获得了这个锁
+
+
+## 线程中断  
+java 有三种方式中断线程：   
+* Threa.stop() 。 该方法会让线程立即终止，并抛出ThreadDeath（）异常，不推荐使用。因为有可能被终止的线程所获得的资源(锁等)永远得不到释放。  
+* 使用退出标志。 当业务逻辑处理完后正常结束，run方法中return  
+* 使用interrupt中断线程。使用该方法有两种情况:  
+ + 当线程正在运行，调用该线程的interrupt方法后，会把该线程的interrupt属性设置为true,可以通过判断该标志位结束。   
+ + 如果线程由于IO/等待锁等情况被阻塞，则线程会抛出一个InterruptException的异常。   
+ 
+以下代码为正常运行线程通过interrupt方法中断：   
+
+	public class InterruptTest {
+	static class InterruptedThread extends Thread {
+		@Override
+		public void run() {
+			while(!Thread.currentThread().isInterrupted()){
+				System.out.println("going!") ;
+			}
+			System.out.println("interrupted! ") ;
+		}
+	}
+	public static void main(String[] args) {
+		Thread interruptedThread = new InterruptedThread() ;
+		interruptedThread.start() ;
+		try {
+			TimeUnit.SECONDS.sleep(3);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		interruptedThread.interrupt() ; 
+	}
+	}  
+以下代码为正在阻塞中线程被中断：   
+
+	public class InterruptTest {
+	static class InterruptedThread extends Thread {
+		@Override
+		public void run() {
+			try {
+				Thread.currentThread().sleep(4000);
+				System.out.println("thread resume!") ;
+			} catch (InterruptedException e) {
+				System.out.println("interrupted! ") ;
+			}
+		}
+	}
+	public static void main(String[] args) {
+		Thread interruptedThread = new InterruptedThread() ;
+		interruptedThread.start() ;
+		try {
+			TimeUnit.SECONDS.sleep(3);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		interruptedThread.interrupt() ; 
+	}
+	}  
+使用interrupt的经典例子：   
+
+	public void run(){    
+            try{    
+                 ....    
+                 while(!Thread.currentThread().isInterrupted()&& more work to do){    
+                        // do more work;    
+                 }    
+            }catch(InterruptedException e){    
+                        // thread was interrupted during sleep or wait    
+            }    
+            finally{    
+                       // cleanup, if required    
+            }    
+    }  
+一定要考虑阻塞和非阻塞两种情况，并做出正确的清理操作。 
+    
 **坚持就会胜利，努力就能成功！**  
 　　　　　　　　　　　　　　　　　　　　　　　update : 2016年11月5日
 　　　　　　　　　　　　　　　　　　　　　　
