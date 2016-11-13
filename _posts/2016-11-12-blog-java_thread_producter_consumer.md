@@ -7,7 +7,7 @@ tags: [技术学习]
 ---
 {% include JB/setup %}
 # java多线程实现生产者消费者  
-JAVA实现生产者消费者有两种方式： 1. wait()/notifyAll()。 2. 使用阻塞队列，JAVA并发包里提供了很多BlockedQueue的实现，LinkedBlockedQueue可以实现无界队列和有界队列；ArrayBlockedQueue只能实现有界队列。以下代码实现制作土司过程的一个仿真程序，制作土司有三个步骤： 1. 制作土司； 2. 在原始土司上涂黄油； 3. 在涂过黄油的土司上涂果酱。  
+JAVA实现生产者消费者有三种方式： 1. wait()/notifyAll();2.使用管道（PipeWriter/PipeReader）在线程间通信； 3. 使用阻塞队列；JAVA并发包里提供了很多BlockedQueue的实现，LinkedBlockedQueue可以实现无界队列和有界队列；ArrayBlockedQueue只能实现有界队列。以下代码实现制作土司过程的一个仿真程序，制作土司有三个步骤： 1. 制作土司； 2. 在原始土司上涂黄油； 3. 在涂过黄油的土司上涂果酱。  
 
 	import java.util.concurrent.ExecutorService;
 	import java.util.concurrent.Executors;
