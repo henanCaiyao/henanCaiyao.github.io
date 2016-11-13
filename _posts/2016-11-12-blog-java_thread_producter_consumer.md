@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "java 多线程笔记"
+title: "java多线程实现生产者消费者"
 description: "学习"
 category: 技术学习
 tags: [技术学习]
