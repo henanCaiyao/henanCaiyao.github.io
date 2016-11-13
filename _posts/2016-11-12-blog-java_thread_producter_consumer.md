@@ -6,7 +6,8 @@ category: 技术学习
 tags: [技术学习]
 ---
 {% include JB/setup %}
-# java多线程实现生产者消费者  
+# java多线程经典问题  
+###生产者消费者问题：    
 JAVA实现生产者消费者有三种方式： 1. wait()/notifyAll();2.使用管道（PipeWriter/PipeReader）在线程间通信； 3. 使用阻塞队列；JAVA并发包里提供了很多BlockedQueue的实现，LinkedBlockedQueue可以实现无界队列和有界队列；ArrayBlockedQueue只能实现有界队列。以下代码实现制作土司过程的一个仿真程序，制作土司有三个步骤： 1. 制作土司； 2. 在原始土司上涂黄油； 3. 在涂过黄油的土司上涂果酱。  
 
 	import java.util.concurrent.ExecutorService;
@@ -141,6 +142,127 @@ JAVA实现生产者消费者有三种方式： 1. wait()/notifyAll();2.使用管
 	
 	}
 
+
+### 哲学家就餐问题
+	场景： 5个哲学家在一个圆桌上就餐，只有5只筷子，每位哲学家会思考和就餐轮流进行。就餐都需要同时拿到左右两边的两只筷子。以下是仿真程序，第一种设定每个哲学家会首先拿到左手边筷子再拿右手边筷子，这种情况会产生死锁，因为会存在循环等待现象，就是大家都同时拿起了左手边的筷子，都在等待右手边筷子。 第二种设定让其中一个哲学家先拿起右手边筷子再拿起左手边筷子，这样解除了循环等待，同时消除死锁。   
+	
+	import java.util.HashMap;
+	import java.util.Map;
+	import java.util.Random;
+	import java.util.concurrent.ExecutorService;
+	import java.util.concurrent.Executors;
+	import java.util.concurrent.TimeUnit;
+
+	/**
+	 * 
+	 * dead lock version 
+	 * 
+	 * @author caiyao_home
+	 *
+	 */
+	public class PhilosopherEatProblem {
+
+	class Chopstick {
+		private boolean isUse = false;
+		private int no;
+		public Chopstick(int no){
+			this.no = no;
+		}
+		public synchronized void take(){
+			try {
+				while(isUse){
+					wait();
+				}
+				isUse = true ;
+			} catch (Exception e) {
+				System.out.println(Thread.currentThread().getName() + "interrupted !");
+				return;
+			}
+		}
+		public synchronized void drop(){
+			isUse = false;
+			notifyAll();
+			System.out.println(Thread.currentThread().getName() + " drop chopstick[" + no + "]");
+		}
+	}
+	
+	class Philosopher implements Runnable{
+		
+		private Chopstick left;
+		
+		private Chopstick right;
+		
+		private int no;
+		
+		public Philosopher(Chopstick left , Chopstick right,int no){
+			this.left = left;
+			this.right = right;
+			this.no = no;
+		}
+		@Override
+		public void run() {
+			try {
+				Random random = new Random(100) ;
+				while(true){
+					// thinking
+					System.out.println("[" + no + "] start thinking ~" );
+					TimeUnit.SECONDS.sleep(0);
+					
+					System.out.println("[" + no + "] wait chopstick [" + left.no + "]");
+					left.take();
+					System.out.println("[" + no + "] get chopstick [" + left.no + "]");
+					
+					System.out.println("[" + no + "] wait chopstick [" + right.no + "]");
+					right.take();
+					System.out.println("[" + no + "] get chopstick [" + right.no + "]");
+					
+					Long eatingTime = random.nextLong() ;
+					System.out.println("[" + no + "] start eating ~ time : " + eatingTime + " millseconds ");
+					TimeUnit.SECONDS.sleep(1); // holding
+					System.out.println("[" + no + "] eating finish !" );
+					left.drop();
+					System.out.println("[" + no + "] drop chopstick [" + left.no + "]");
+					right.drop();
+					System.out.println("[" + no + "] drop chopstick [" + right.no + "]");
+				}
+			} catch (Exception e) {
+				System.out.println("[" + no + "] philosopher thread interrupted !" );
+			}
+		}
+	}
+	public static void main(String[] args) {
+		
+		PhilosopherEatProblem test = new PhilosopherEatProblem(); 
+		
+		Map<Integer , Chopstick> chopstickMap = new HashMap<>() ;
+		
+		
+		for(int i = 0; i < 5; i ++){
+			chopstickMap.put(i,test.new Chopstick(i)) ;
+		}
+		ExecutorService pool = Executors.newFixedThreadPool(5) ;
+		
+		// 以下是存在死锁版本
+		for(int i = 0; i < 5; i ++){
+			pool.execute(
+					test.new Philosopher(
+							chopstickMap.get(i), 
+							chopstickMap.get((i + 1) % chopstickMap.entrySet().size()) , 
+							i
+					));
+		}
+		// 以下是不存在死锁版本
+		/*for(int i = 0; i < 4; i ++){
+			pool.execute(
+					test.new Philosopher(
+							chopstickMap.get(i), 
+							chopstickMap.get(i + 1) , 
+							i
+					));
+		}
+		pool.execute(test.new Philosopher(chopstickMap.get(0), chopstickMap.get(4), 4)); */ 
+	}
+	}
 
 
     
